@@ -1,0 +1,18 @@
+.select {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 8px;
+}
+
+.select select, .select select option{
+  
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 8px;
+
+    color:  #A5A5A5;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}

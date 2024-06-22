@@ -1,0 +1,21 @@
+.button {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    width:  220px;
+    padding: 12px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    
+}
+
+.button:hover{
+    border: 2px solid #2271D1;
+}
+
+.button:active{
+    border: 2px solid #2271D1;
+}

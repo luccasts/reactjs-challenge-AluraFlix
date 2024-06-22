@@ -4,6 +4,14 @@ import { VideosContext } from "../context/Videos";
 export const useVideosContext = () => {
     
 const { videos, setVideos } = useContext(VideosContext);
+
+    const fetchVideoData = () => {
+        fetch('http://localhost:3000/videos')
+        .then(r => r.json())
+        .then(r => setVideos(r));
+
+    }
+
     const postVideoData = (value) => {
         fetch('http://localhost:3000/videos', {
             method: 'POST',
@@ -23,7 +31,6 @@ const { videos, setVideos } = useContext(VideosContext);
     }
 
    const putVideoData = (value, id) => {
-    console.log(value, id)
         fetch(`http://localhost:3000/videos/${id}`, {
             method: 'PUT',
             headers:{
@@ -36,8 +43,8 @@ const { videos, setVideos } = useContext(VideosContext);
                 image: value.image,
                 description: value.description
             })
-        })
-        setVideos([...videos, value])
+        })   
+        fetchVideoData()
    }
 
     const deleteVideoData = (id) => {
@@ -61,12 +68,15 @@ const { videos, setVideos } = useContext(VideosContext);
             colorPrimary:' #FFBA05',
         }
     ];
+
+
     return {
         videos,
         postVideoData,
         deleteVideoData,
         putVideoData,
         setVideos,
-        categoryArray
+        categoryArray,
+
     }
 }

@@ -1,0 +1,27 @@
+.Front_End{
+    background-color:#6BD1FF;
+}
+
+
+.Back_End{
+    background: #00C86F;
+
+}
+
+.Mobile {
+    background: #FFBA05;
+}
+.smButton{
+    padding: 32px 8px;
+    width: 430px;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56.25px;
+} 
+
+.lgButton{
+    width: 600px;
+    padding: 32px;
+    font-size: 32px;
+    line-height: 37.5px;
+}
