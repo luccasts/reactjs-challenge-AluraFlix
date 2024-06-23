@@ -8,20 +8,22 @@ import styles from "./Home.module.css"
 
 
 const Home = () => {
-    const { categoryArray, videos, setVideos } = useVideosContext()
+    const { categoryArray, videos, setVideos } = useVideosContext();
     useEffect(() => {
         fetch('http://localhost:3000/videos')
             .then(r => r.json())
             .then(r => setVideos(r))
     }, [])
 
-    useEffect(() => {
-        console.log('atualizei')
-    }, [videos])
 
     return (
         <>
-            <Banner src="https://i.pinimg.com/736x/f9/09/83/f909834748015d9c0b7511d651490d99.jpg" />
+            <Banner 
+            category="Front End"
+            title="O que faz uma desenvolvedora front-end?"
+            videoLink="https://www.youtube.com/embed/ZY3-MFxVdEw?si=hKz0QNSKPD6EvxWT"
+            paragraph="O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa nesse episódio! "
+           />
 
             <Container>
                 <div className={styles.containerFlex}>
@@ -30,7 +32,7 @@ const Home = () => {
                             <ButtonCategory size="lg" category={category.name.replace(" ", "_")}> <h2>{category.name}</h2></ButtonCategory>
                             {videos &&
                                 <Videos
-                                    colorPrimary={category.colorPrimary}
+                                    
                                     videos={videos.filter(video => video.category === category.name)}
                             />}
                         </section>

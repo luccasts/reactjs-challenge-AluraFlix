@@ -7,19 +7,18 @@ import Select from "./Select";
 import styles from "./Form.module.css"
 import TextArea from "./TextArea";
 import ButtonForm from "../ButtonForm";
+import { useLocation } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 const Form = ({ method, id }) => {
-
+    const location = useLocation()
+    
     const { postVideoData, putVideoData } = useVideosContext();
     const { title, setTitle,
         category, setCategory,
         image, setImage,
         videoLink, setVideoLink,
         description, setDescription } = useContext(FormContext);
-
-
-
 
     const clearForm = (event) => {
         event.preventDefault();
@@ -30,8 +29,6 @@ const Form = ({ method, id }) => {
         setDescription("")
     }
     const toSaveForm = (event) => {
-        event.preventDefault();
-        console.log(event);
         event.preventDefault();
         {
             method === "post"
@@ -53,11 +50,13 @@ const Form = ({ method, id }) => {
                 }, id)
         }
     }
-    // onSubmit={(e) => toSaveForm(e)}
+    // 
 
     return (
-        <form className={styles.form} method={method}>
-            {method === "post" ? "" : <button>Fechar</button>}
+        <form onSubmit={toSaveForm} className={styles.form} method={method}
+            style={location.pathname === "/" ? {flexDirection:"column"} : {flexDirection:"row"}}
+        >
+            
             <InputText
                 valueProps={title}
                 placeHolder="Informe o título"
@@ -93,7 +92,7 @@ const Form = ({ method, id }) => {
                 onChangeProps={value => setDescription(value)}
                 label={"Descrição"} />
             <div className={styles.buttonForm}>
-                <ButtonForm onclickProps={toSaveForm}>Guardar</ButtonForm>
+                <ButtonForm>Guardar</ButtonForm>
                 <ButtonForm onclickProps={clearForm}>Limpar</ButtonForm>
             </div>
         </form>

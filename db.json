@@ -1,36 +1,36 @@
 {
   "videos": [
     {
-      "id": "1",
-      "title": "Titulo Front End",
+      "title": "O que faz uma desenvolvedora front-end?aaaaaa",
       "category": "Front End",
-      "videoLink": "https://www.youtube.com/embed/y8FeZMv37WU",
-      "image": "https://i.pinimg.com/474x/9b/39/bb/9b39bb205c6d87db91ebdf3411b7fe9c.jpg",
-      "description": "Descrição do Front End"
+      "videoLink": "https://youtu.be/ZY3-MFxVdEw?si=YdX_h7N0GsqZTdoF",
+      "image": "https://i.imgur.com/wLAs0Dh.png",
+      "description": "O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa nesse episódio! ",
+      "id": "1"
     },
     {
       "id": "2",
-      "title": "NYAAAA",
+      "title": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
       "category": "Back End",
-      "image": "https://i.pinimg.com/236x/cc/25/93/cc2593b3f3eadc44eb717d44deb94a78.jpg",
-      "videoLink": "https://www.youtube.com/embed/y8FeZMv37WU",
-      "description": "Descrição do Back End"
+      "image": "https://i.imgur.com/BFFZoMo.png",
+      "videoLink": "https://youtu.be/Uh-GNH-t89w?si=haeBIdFZ67jfOuys",
+      "description": "PHP, JavaScript, Python, Java e outras... qual é a melhor? Como surgiram essas linguagens e quais as aplicações e usos de cada uma na aprendizagem e para o mercado? Descubra nesta conversa da Roberta Arcoverde e do Paulo Silveira. "
     },
     {
-      "id": "3",
-      "title": "Título Mobile",
+      "title": "Desenvolvimento Android #HipstersPontoTubeAAA",
       "category": "Mobile",
-      "image": "https://i.pinimg.com/236x/36/53/b3/3653b30152aa5c7db92e65802fffb0e0.jpg",
-      "videoLink": "https://www.youtube.com/embed/y8FeZMv37WU",
-      "description": "Descrição do Mobile"
+      "videoLink": "https://www.youtube.com/watch?v=fWscDFHKgw8&pp=ygUkYWx1cmEgbW9iaWxlIGRlc2Vudm9sdmltZW50ZSBhbmRyb2lk",
+      "image": "https://i.imgur.com/byprLni.png",
+      "description": "Um episódio focado no desenvolvimento de aplicações Android. Neste bate-papo, Paulo Silveira e Felipe Torres conversam sobre os primeiros passos para começar a desenvolver, quais as principais ferramentas do desenvolvimento mobile, como colocar sua aplicação no ar e mais! ",
+      "id": "3"
     },
     {
-      "id": "6cad",
-      "title": "",
-      "category": "",
-      "videoLink": "",
-      "image": "",
-      "description": ""
+      "title": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
+      "category": "Back End",
+      "videoLink": "https://youtu.be/6o6-bKOZOEY?si=bD1zIARug6ZIAbGF",
+      "image": "https://i.imgur.com/mFa4Dlo.png",
+      "description": "Nesse vídeo vamos aprender um pouco mais o que seria o GitHub CLI e quais são as suas vantagens!",
+      "id": "4"
     }
   ]
 }

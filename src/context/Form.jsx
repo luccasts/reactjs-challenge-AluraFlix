@@ -10,14 +10,13 @@ const FormProvider = ({ children }) => {
     const [image, setImage] = useState("");
     const [videoLink, setVideoLink] = useState("");
     const [description, setDescription] = useState("");
-    
+   
     return (
         <FormContext.Provider value={{ title, setTitle,
             category, setCategory,
             image, setImage,
             videoLink, setVideoLink,
-            description, setDescription
-
+            description, setDescription,
         }}>
             {children}
         </FormContext.Provider>

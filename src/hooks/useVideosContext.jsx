@@ -53,19 +53,17 @@ const { videos, setVideos } = useContext(VideosContext);
         })
         setVideos(videos.filter((video) => video.id !== id))
     }
+
     const categoryArray = [
         {
-          name:'Front End',
-          colorPrimary:'#6BD1FF',
+          name:'Front End'
         },
         {
-          name:'Back End',
-          colorPrimary:'#82CFFA',
+          name:'Back End'
          
         },
         {
-            name:'Mobile',
-            colorPrimary:' #FFBA05',
+            name:'Mobile'
         }
     ];
 

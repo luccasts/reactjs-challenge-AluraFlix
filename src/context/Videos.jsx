@@ -6,7 +6,7 @@ VideosContext.displayName = 'Videos';
 // eslint-disable-next-line react/prop-types
 const VideosProvider = ({ children }) => {
     const [videos, setVideos] = useState([]);
-    
+
     return (
         <VideosContext.Provider value={{ videos, setVideos }}>
             {children}

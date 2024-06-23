@@ -1,6 +1,8 @@
 .card {
     display: flex;
     flex-direction: column;
+   
+
 }
 
 .divButton {
@@ -14,27 +16,4 @@
     border-radius: 0px 0px 8px 8px;
 
 }
-/* 
-.dialog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    margin: auto;
-    position: absolute;
-    top: 25%;
- 
-    width: 50%;
-    height: 80%;
-
-    background-color: #03122F;
-    border: 5px solid #6BD1FF;
-}
-
-.dialog h1 {
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 70.31px;
-    text-align: left;
-} */

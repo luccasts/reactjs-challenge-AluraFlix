@@ -1,7 +1,7 @@
 import styles from "./ButtonForm.module.css"
 
 // eslint-disable-next-line react/prop-types
-const ButtonForm = ({ onclickProps, children, typeProps }) => {
+const ButtonForm = ({ onclickProps, children }) => {
     return (
         <button onClick={onclickProps}  className={styles.button} >
             {children}
@@ -9,5 +9,3 @@ const ButtonForm = ({ onclickProps, children, typeProps }) => {
     )
 }
 export default ButtonForm;
-//onSubmit={onclickProps}
-//onClick={onclickProps}
