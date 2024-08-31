@@ -34,7 +34,7 @@ O projeto Alura Flix utiliza as seguintes tecnologias e bibliotecas:
 
 ## 🛠️ Abrir e rodar o projeto
 
-Para executar o projeto Meteora em seu ambiente local, siga estas etapas:
+Para executar o projeto Alura Flix em seu ambiente local, siga estas etapas:
 
 1. Certifique-se de ter o Node.js instalado em sua máquina.
 
@@ -45,7 +45,7 @@ Para executar o projeto Meteora em seu ambiente local, siga estas etapas:
 4. Navegue até a pasta em questão via terminal (cmd):
 
 ```bash
-cd repo-meteora
+cd AluraFlix
 ```
 
 5. Instale as dependências usando o npm:
